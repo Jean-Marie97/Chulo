@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window</title>
+	<script type="text/javascript">
+		var sWindowName;
+		function fnNewWinndow(argument) {
+			alert("New Window ahead....");
+			sWindowName=open("", "Window","scrollbars=1, status=1");
+			status="Clicked the new Window option";
+		}
+		function fnOpenWindow(argument) {
+			alert("opening... Patience required.");
+			sWindowName=open("http://www.hotmail.com","Hotmail","scrollbars=1, status=1");
+			status="Clicked the open Window option";
+		}
+		function fnClose(argument) {
+			alert("thank you");
+			sWindowName.close();
+			status="Clicked the close Window option";
+		}
+	</script>
+</head>
+<body>
+<input type="Button" name="btnewWindow" value="New Window" onclick="fnNewWindow()">
+<input type="Button" name="btopenWindow" value="Open Window" onclick="fnOpenWindow()">
+<input type="Button" name="btcloseWindow" value="Close Window" onclick="fnCloseWindow()">
+</body>
+</html>
